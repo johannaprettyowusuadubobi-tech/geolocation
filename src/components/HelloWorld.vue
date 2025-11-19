@@ -6,19 +6,18 @@
 
 <script>
 import L from "leaflet"
-import {marker}  from "leaflet"
 export default {
   mounted(){
-
-    const map = L.map('mapView').setView([5.600609, -0.194249,], 13)
-    console.log(map)
+    const  lat = 5.600609
+    const longi = -0.194249
+    const map = L.map('mapView').setView([lat, longi,], 13)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 16,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
- L.marker([5.600609, -0.194249,]).addTo(map);
- console.log(marker)
- L.circle([5.597406, -0.195193,], {
+ L.marker([lat, longi,]).addTo(map);
+
+ L.circle([lat, longi,], {
     color: 'blue',
     fillColor: 'blue',
     fillOpacity: 0.5,
