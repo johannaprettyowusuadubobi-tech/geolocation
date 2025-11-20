@@ -16,7 +16,6 @@ export default {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
  L.marker([lat, longi,]).addTo(map);
-
  L.circle([lat, longi,], {
     color: 'blue',
     fillColor: 'blue',
