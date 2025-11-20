@@ -19,17 +19,11 @@ const routes = [
     component: AboutView
   },
   {
-    path: '/Dashboard',
-    name: 'Dashboard',
+    path: '/dashboard',
+    name: 'dashboard',
     component: Dashboard
   }
 ]
-
-
-
-
-
-
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
